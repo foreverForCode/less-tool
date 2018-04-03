@@ -1,3 +1,5 @@
+[toc]
+
 # less-tool
 
 ## introduction
