@@ -6,6 +6,8 @@
 ## How to install
 
 ```
+	npm install gulp -g
+	
 	git clone https://github.com/foreverForCode/less-tool.git 
 
 	cd less-tool
