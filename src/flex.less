@@ -1,0 +1,85 @@
+// box layout
+
+.je-flexbox{display:-webkit-box;display:box;}
+.je-flex{position:relative;-webkit-box-flex:1;-ms-box-flex: 1;box-flex:1;-webkit-flex: 1;-ms-flex: 1;flex: 1;}
+
+#flex {
+    // 水平方向
+    .je-text-left(){-webkit-box-pack: start;box-pack: start;}
+    .je-text-center(){-webkit-box-pack: center;box-pack: center;}
+    .je-text-right(){-webkit-box-pack: end;box-pack: end;}
+
+    // 垂直方向
+    .je-align-top(){-webkit-box-align: start;box-align: start;}
+    .je-align-center(){-webkit-box-align: center;box-align: center;}
+    .je-align-bottom(){-webkit-box-align: end;align: end;}
+
+    // 排列方式
+    .je-orient-ver(){-webkit-box-orient: vertical;box-orient: vertical;}    
+    .je-orient-hor(){-webkit-box-orient: horizontal;box-orient: horizontal;}
+}
+ // 水平方向
+.je-text-left{#flex > .je-text-left;}
+.je-text-center{#flex > .je-text-center;}
+.je-text-right(){#flex > .je-text-right;}
+
+// 垂直方向
+.je-align-top(){#flex > .je-align-top;}
+.je-align-center(){#flex > .je-align-center;}
+.je-align-bottom(){#flex > .je-align-bottom;}
+
+
+// 排列方式
+// 垂直方向
+.je-orient-ver{#flex > .je-orient-ver}
+// 水平方向
+.je-orient-hor{#flex > .je-orient-hor}
+
+// 水平方向
+// 左上
+.je-box-left-top{ #flex > .je-orient-hor; #flex > .je-text-left;#flex > .je-align-top;}
+// 左中
+.je-box-left-center{#flex > .je-orient-hor; #flex > .je-text-left;#flex > .je-align-center;}
+// 左下
+.je-box-left-bottom{ #flex > .je-orient-hor; #flex > .je-text-left;#flex > .je-align-bottom;}
+
+// 中上
+.je-box-center-top{ #flex > .je-orient-hor; #flex > .je-text-center;#flex > .je-align-top;}
+// 中中
+.je-box-center-center{ #flex > .je-orient-hor; #flex > .je-text-center;#flex > .je-align-center;}
+// 中下
+.je-box-center-bottom{ #flex > .je-orient-hor; #flex > .je-text-center;#flex > .je-align-bottom;}
+
+// 右上
+.je-box-right-top{ #flex > .je-orient-hor; #flex > .je-text-right;#flex > .je-align-top;}
+// 右中
+.je-box-right-center{ #flex > .je-orient-hor; #flex > .je-text-right;#flex > .je-align-center;}
+// 右下
+.je-box-right-bottom{ #flex > .je-orient-hor; #flex > .je-text-right;#flex > .je-align-bottom;}
+
+
+// ======================================垂直方向=================================================
+// 左上
+.je-box-left-top-ver{ #flex > .je-orient-ver; #flex > .je-text-left;#flex > .je-align-top;}
+// 左中
+.je-box-left-center-ver{#flex > .je-orient-ver; #flex > .je-text-center;#flex > .je-align-top;}
+// 左下
+.je-box-left-bottom-ver{ #flex > .je-orient-ver; #flex > .je-text-right;#flex > .je-align-top;}
+
+// 中上
+.je-box-center-top-ver{ #flex > .je-orient-ver; #flex > .je-text-left;#flex > .je-align-center;}
+// 中中
+.je-box-center-center-ver{ #flex > .je-orient-ver; #flex > .je-text-center;#flex > .je-align-center;}
+// 中下
+.je-box-center-bottom-ver{ #flex > .je-orient-ver; #flex > .je-text-right;#flex > .je-align-center;}
+
+// 右上
+.je-box-right-top-ver{ #flex > .je-orient-ver; #flex > .je-text-left;#flex > .je-align-bottom;}
+// 右中
+.je-box-right-center-ver{ #flex > .je-orient-ver; #flex > .je-text-center;#flex > .je-align-bottom;}
+// 右下
+.je-box-right-bottom-ver{ #flex > .je-orient-ver; #flex > .je-text-right;#flex > .je-align-bottom;}
+
+
+
+
