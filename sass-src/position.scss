@@ -1,0 +1,6 @@
+@import "common";
+
+.#{$prefix}ovh{overflow:hidden;}   .#{$prefix}por{position:relative;}   .#{$prefix}poa{position:absolute;}   .#{$prefix}pof{position:fixed!important;}
+
+/* text-align */
+.#{$prefix}tc{text-align:center;}   .#{$prefix}tr{text-align:right;}   .#{$prefix}tl{text-align:left;}  

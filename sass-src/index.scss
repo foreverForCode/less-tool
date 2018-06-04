@@ -1,7 +1,15 @@
-$background: red;
-div{
-    background:$background;
-}
-p{
-    background: $background;
-}
+
+@import "reset";
+@import "box";
+@import "color";
+@import "display";
+@import "flexbox";
+@import "float";
+@import "font";
+@import "position";
+
+@import "precent";
+
+@import "radius";
+
+@import "shine"

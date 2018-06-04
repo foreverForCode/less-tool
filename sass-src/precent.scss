@@ -1,0 +1,11 @@
+// 百分比
+@import "common";
+// font-size
+@for $i from 1 through 20 {
+    .#{$jew}#{$i*5}{width:$i*5%} 
+}
+
+
+.jew100{width:100%;}   .jew90{width:90%;}   .jew80{width:85%;}   .jew80{width:80%;}   .jew75{width:75%;}      .jew70{width:70%;}    
+.jew67{width:67%;}     .jew60{width:60%;}   .jew50{width:50%;}   .jew40{width:40%;}   .jew33{width:33.33%;}   .jew30{width:30%;}    
+.jew25{width:25%;}     .jew20{width:20%;}   .jew10{width:15%;}   .jew10{width:10%;}   .jew5{width:5%;}       .jew15{width:15%;} 

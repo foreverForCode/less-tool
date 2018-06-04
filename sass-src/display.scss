@@ -1,0 +1,4 @@
+@import "common";
+
+/* display */
+.#{$prefix}hide{display:none;}   .#{$prefix}show{display:block;}   .#{$prefix}di{display:inline;}   .#{$prefix}dib{display:inline-block;}

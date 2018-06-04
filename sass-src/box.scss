@@ -1,0 +1,13 @@
+@import "common";
+
+@for $i from 1 through 60 {
+    .#{$prefix}m#{$t}#{$i}{margin-top:$i*1#{$danwei}}
+    .#{$prefix}m#{$b}#{$i}{margin-bottom:$i*1#{$danwei}}
+    .#{$prefix}m#{$l}#{$i}{margin-left:$i*1#{$danwei}}
+    .#{$prefix}m#{$r}#{$i}{margin-right:$i*1#{$danwei}} 
+
+    .#{$prefix}p#{$t}#{$i}{padding-top:$i*1#{$danwei}}
+    .#{$prefix}p#{$b}#{$i}{padding-bottom:$i*1#{$danwei}}
+    .#{$prefix}p#{$l}#{$i}{padding-left:$i*1#{$danwei}}
+    .#{$prefix}p#{$r}#{$i}{padding-right:$i*1#{$danwei}} 
+}

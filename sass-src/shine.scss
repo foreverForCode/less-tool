@@ -1,0 +1,24 @@
+@import "common";
+
+/* 0.5 pixel */
+.#{$prefix}cell{position: relative;padding: 10px 15px;display: block;}
+.#{$prefix}cell-topbot:before {width: 100%;height: 1px;content: " ";position: absolute;left: 0;top: 0;border-top: 1px solid #D9D9D9;
+  -webkit-transform-origin: 0 0;-ms-transform-origin: 0 0;transform-origin: 0 0;
+  -webkit-transform: scaleY(0.5);-ms-transform: scaleY(0.5);transform: scaleY(0.5);
+}
+.#{$prefix}cell-topbot:after {width: 100%;height: 1px;content: " ";position: absolute;left: 0;bottom:-1px;border-bottom: 1px solid #D9D9D9;
+  -webkit-transform-origin: 0 0;-ms-transform-origin: 0 0;transform-origin: 0 0;
+  -webkit-transform: scaleY(0.5);-ms-transform: scaleY(0.5);transform: scaleY(0.5);
+}
+.#{$prefix}cell-top:before {width: 100%;height: 1px;content: " ";position: absolute;left: 0;top: 0;border-top: 1px solid #D9D9D9;
+  -webkit-transform-origin: 0 0;-ms-transform-origin: 0 0;transform-origin: 0 0;
+  -webkit-transform: scaleY(0.5);-ms-transform: scaleY(0.5);transform: scaleY(0.5);
+}
+.#{$prefix}cell-bottom:after {width: 100%;height: 1px;content: " ";position: absolute;left: 0;bottom:-1px;border-bottom: 1px solid #D9D9D9;
+  -webkit-transform-origin: 0 0;-ms-transform-origin: 0 0;transform-origin: 0 0; 
+  -webkit-transform: scaleY(0.5);-ms-transform: scaleY(0.5);transform: scaleY(0.5);
+}
+.#{$prefix}cell-all:after {width: 200%;height: 200%;content: " ";position: absolute;top: 0;left: 0;border: 1px solid #D9D9D9;
+  -webkit-transform: scale(0.5);-ms-transform: scale(0.5);transform: scale(0.5);
+  -webkit-transform-origin: 0 0;-ms-transform-origin: 0 0;transform-origin: 0 0;
+}

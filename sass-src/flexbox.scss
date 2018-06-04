@@ -1,0 +1,84 @@
+@import "common";
+
+.je-flexbox{display:-webkit-box;display:box;}
+
+.je-flex{position:relative;-webkit-box-flex:1;-ms-box-flex: 1;box-flex:1;-webkit-flex: 1;-ms-flex: 1;flex: 1;}
+
+@mixin je-text-left{-webkit-box-pack: start;box-pack: start;}
+
+@mixin je-text-center{-webkit-box-pack: center;box-pack: center;}
+
+@mixin je-text-right{-webkit-box-pack: end;box-pack: end;}
+
+@mixin je-align-top{-webkit-box-align: start;box-align: start;}
+
+@mixin je-align-center{-webkit-box-align: center;box-align: center;}
+
+@mixin je-align-bottom{-webkit-box-align: end;align: end;}
+
+@mixin je-orient-ver{-webkit-box-orient: vertical;box-orient: vertical;}  
+
+@mixin je-orient-hor{-webkit-box-orient: horizontal;box-orient: horizontal;}
+
+// 基本
+.je-text-left{@include je-text-left}
+
+.je-text-center{@include je-text-center}
+
+.je-text-right{@include je-text-right}
+
+.je-align-top{@include je-align-top}
+
+.je-align-center{@include je-align-center}
+
+.je-align-bottom{@include je-align-bottom}
+
+.je-orient-ver{@include je-orient-ver}  
+
+.je-orient-hor{@include je-orient-hor}
+
+// 水平方向9点定位
+// 左上
+.je-box-left-top{ @include je-orient-hor; @include je-text-left;@include je-align-top;}
+// 左中
+.je-box-left-center{@include je-orient-hor; @include je-text-left;@include je-align-center;}
+// 左下
+.je-box-left-bottom{ @include je-orient-hor; @include je-text-left;@include je-align-bottom;}
+
+// 中上
+.je-box-center-top{ @include je-orient-hor; @include je-text-center;@include je-align-top;}
+// 中中
+.je-box-center-center{ @include je-orient-hor; @include je-text-center;@include je-align-center;}
+// 中下
+.je-box-center-bottom{ @include je-orient-hor; @include je-text-center;@include je-align-bottom;}
+
+// 右上
+.je-box-right-top{ @include je-orient-hor; @include je-text-right;@include je-align-top;}
+// 右中
+.je-box-right-center{ @include je-orient-hor; @include je-text-right;@include je-align-center;}
+// 右下
+.je-box-right-bottom{ @include je-orient-hor; @include je-text-right;@include je-align-bottom;}
+
+// ======================================垂直方向=================================================
+// 左上
+.je-box-left-top-ver{ @include je-orient-ver; @include je-text-left;@include je-align-top;}
+// 左中
+.je-box-left-center-ver{@include je-orient-ver; @include je-text-center;@include je-align-top;}
+// 左下
+.je-box-left-bottom-ver{ @include je-orient-ver; @include je-text-right;@include je-align-top;}
+
+// 中上
+.je-box-center-top-ver{ @include je-orient-ver; @include je-text-left;@include je-align-center;}
+// 中中
+.je-box-center-center-ver{ @include je-orient-ver; @include je-text-center;@include je-align-center;}
+// 中下
+.je-box-center-bottom-ver{ @include je-orient-ver; @include je-text-right;@include je-align-center;}
+
+// 右上
+.je-box-right-top-ver{ @include je-orient-ver; @include je-text-left;@include je-align-bottom;}
+// 右中
+.je-box-right-center-ver{ @include je-orient-ver; @include je-text-center;@include je-align-bottom;}
+// 右下
+.je-box-right-bottom-ver{ @include je-orient-ver; @include je-text-right;@include je-align-bottom;}
+
+
